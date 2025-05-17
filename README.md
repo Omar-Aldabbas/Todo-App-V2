@@ -21,10 +21,14 @@ A modern, minimalistic Todo web application built using HTML, CSS, and JavaScrip
 ## 📂 File Structure
 
 Todo-App-V2/
-├── index.html       # Main HTML structure
-├── styles.css       # App styling with variables and layout
-├── script.js        # All JavaScript functionality
-└── README.md        # Project documentation
+
+├── index.html
+
+├── styles.css
+
+├── script.js   
+
+└── README.md
 
 ## ✅ How to Use
 

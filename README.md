@@ -1,6 +1,7 @@
 # Todo App V2
 
-A modern, minimalistic Todo web application built using HTML, CSS, and JavaScript. This app allows users to manage their daily tasks with ease — including adding, editing, and deleting tasks — with a responsive interface and form handling.
+A modern, minimalistic Todo web application built using HTML, CSS, and JavaScript. This app allows users to manage their daily tasks with ease 
+— including adding, editing, and deleting tasks — with a responsive interface and form handling.
 
 ## 🚀 :sparkles: ✨ Features
 
@@ -19,7 +20,11 @@ A modern, minimalistic Todo web application built using HTML, CSS, and JavaScrip
 
 ## 📂 File Structure
 
-<pre> ``` 📁 Todo-App-V2/ ├── index.html # Main HTML structure ├── styles.css # App styling with variables and layout ├── script.js # All JavaScript functionality └── README.md # Project documentation ``` </pre>
+Todo-App-V2/
+├── index.html       # Main HTML structure
+├── styles.css       # App styling with variables and layout
+├── script.js        # All JavaScript functionality
+└── README.md        # Project documentation
 
 ## ✅ How to Use
 

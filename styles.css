@@ -1,0 +1,186 @@
+:root {
+  --background-color: #d6d6cff3;
+  --card-background: #ffffff;
+  --accent-color: #3f9c44;
+  --accent-hover: #691a65;
+  --text-color: #1a1a1a;
+  --muted-text: #6c757d;
+  --input-border: #d0d7de;
+  --shadow-sm: 0 1px 2px rgba(23, 13, 31, 0.05);
+  --shadow-md: 0 4px 12px rgba(40, 10, 41, 0.1);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: system-ui, sans-serif;
+  color: var(--text-color);
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #1f2a38;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.large-btn {
+  width: 100%;
+}
+
+.task-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.task-form-header {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.task-form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.task-form-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+#title-input,
+#date-input,
+#description-input {
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid var(--input-border);
+  font-size: 1rem;
+  background-color: #f9fafb;
+  color: var(--text-color);
+}
+
+.task-form-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#confirm-close-dialog {
+  background-color: var(--card-background);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  color: var(--text-color);
+}
+
+.confirm-close-dialog-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.discard-message-text {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  background-color: #f1f3f5;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  box-shadow: var(--shadow-sm);
+  gap: 1rem; 
+  flex-wrap: wrap; 
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  min-width: 0;
+}
+
+.task-desc {
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+.task-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.task-date {
+  font-size: 0.85rem;
+  color: var(--muted-text);
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
